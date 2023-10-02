@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "80dbd208-bfdf-4781-8a7b-a8cdcbed927e",
+		"name": "Captcha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26211282"
+	},
+	"item": [
+		{
+			"name": "generate-captcha",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/validate?questionId=32cac7f3b6ddd9deb4be79eb&answerId=72cac7f3b6ddd9deb4be79eb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"validate"
+					],
+					"query": [
+						{
+							"key": "questionId",
+							"value": "32cac7f3b6ddd9deb4be79eb"
+						},
+						{
+							"key": "answerId",
+							"value": "72cac7f3b6ddd9deb4be79eb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate-captcha",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/captcha",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"captcha"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
